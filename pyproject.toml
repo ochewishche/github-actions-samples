@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "test-spacy-package"
+version = "0.1.0"
+description = ""
+authors = [""]
+readme = "README.md"
+packages = [{include = "test_spacy_package"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+spacy = "^3.4.4"
+keyring = "^23.13.1"
+keyrings-google-artifactregistry-auth = "1.0.0"
+en-ma-tagger = "1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
