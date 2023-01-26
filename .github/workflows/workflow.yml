@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: Test worflow trigerred by ${{ github.actor }} 🚀
 on: [push]
 env:
   PYTHON_VERSION: "3.10.6"
@@ -21,3 +21,4 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: "poetry"
       - run: poetry install
+      - run: poetry run python src/test.py
