@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "test-spacy-package"
+name = "github-actions-sample"
 version = "0.1.0"
 description = ""
-authors = [""]
+authors = ["ochevishche"]
 readme = "README.md"
-packages = [{include = "test_spacy_package"}]
+packages = [ { include = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
